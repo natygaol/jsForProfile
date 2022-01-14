@@ -4,11 +4,20 @@ function changeName(element){
   profileName.innerText = "Naty García"
 }
 
-let acceptInvite = document.querySelectorAll(".user-line.borrar");
-console.log(acceptInvite);
+let acceptInvite1 = document.querySelectorAll("#para-borrar");
+console.log(acceptInvite1);
 
+function borrarInvite (element){
+  acceptInvite1.forEach((invite) => {
+    invite.remove();
+  });
+}
 
+let acceptInvite2 = document.querySelectorAll("#para-borrar2");
+console.log(acceptInvite1);
 
-function removeUser(element){
-  console.log(element.parentNoderemoveChild(element));
+function borrarInvite2 (element){
+  acceptInvite2.forEach((invite) => {
+    invite.remove();
+  });
 }
